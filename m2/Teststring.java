@@ -21,7 +21,7 @@ class Teststring{
     //=> on prend la méthode toString() pour Object
     // Et pas méthode toString() pour String
 
-    Point p = new Point(0,0);
+    Point p = new Point(10,10);
     ElementRepere e = new ElementRepere();
 
     // méthode toString() marche pareil pour Objet et Point

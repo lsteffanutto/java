@@ -30,7 +30,7 @@ class Point {
     System.out.println(p.getX());
     System.out.println(p.getY());
 
-    
+
     p.move(10,10);
     System.out.println(p.getX());
     System.out.println(p.getY());

@@ -5,9 +5,10 @@ class Point extends ElementRepere {
   Point(){
     this.x=0;
     this.y=0;
+    this.titre="p0";
   }
 
-  Point(int x, int y){
+  Point(String titre, int x, int y){
 
     if(x<0)
       this.x=0;
@@ -17,7 +18,9 @@ class Point extends ElementRepere {
     if(y<0)
       this.y=0;
     else
-      this.y=x;
+      this.y=y;
+
+    this.titre=titre;
   }
 
   int getX(){
@@ -29,8 +32,7 @@ class Point extends ElementRepere {
   }
 
   String description(){
-    return super.description() + "Point (" + this.x + "," + this.y + ")";
+    return super.description() + "Point (" + this.x + "," + this.y + "), titre : " + this.titre;
   }
-  // Priorité à la fonction description dans ElementRepere, au-dessus dans la hiérarchie
-  // Qu'on complète avec le super.
+
 }
