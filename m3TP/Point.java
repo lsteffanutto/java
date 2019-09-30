@@ -3,12 +3,30 @@ class Point extends ElementRepere {
   int x,y;
 
   Point(){
+
+    this.titre="Point";
+    this.c = Couleur.noir();
     this.x=0;
     this.y=0;
-    this.titre="p0";
   }
 
-  Point(String titre, int x, int y){
+  Point(int x, int y){
+    this.titre="Point";
+    this.c = Couleur.noir();
+    if(x<0)
+      this.x=0;
+    else
+      this.x=x;
+
+    if(y<0)
+      this.y=0;
+    else
+      this.y=y;
+  }
+
+  Point(String titre, Couleur c, int x, int y){
+
+    super(titre, c);
 
     if(x<0)
       this.x=0;
@@ -21,18 +39,20 @@ class Point extends ElementRepere {
       this.y=y;
 
     this.titre=titre;
+
+    this.c=c;
   }
 
   int getX(){
-    return x;
+    return this.x;
   }
 
   int getY(){
-    return y;
+    return this.y;
   }
 
   String description(){
-    return super.description() + "Point (" + this.x + "," + this.y + "), titre : " + this.titre;
+    return "Point (" + this.x + "," + this.y + ")" + super.description();
   }
 
 }

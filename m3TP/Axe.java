@@ -1,23 +1,27 @@
 class Axe extends ElementAvecNom {
 
   int taille;
-  String titre;
-
 
   Axe(String titre,int taille){
+
+    super(titre.toUpperCase());
 
     if( taille < 0 )
       this.taille=0;
     else
       this.taille=taille;
 
-    this.titre=titre.toUpperCase();
 
   }
 
+  // Axe(int taille){
+  //   this.titre = "AXE";
+  //   this.taille= taille;
+  // }
+
   Axe(){
-    this.taille=10;
-    this.titre = "AXE 0";
+    this.titre = "AXE";
+    this.taille=0;
   }
 
   int getTaille(){
@@ -33,7 +37,7 @@ class Axe extends ElementAvecNom {
   // }
 
   String description(){
-    return super.description() + "Axe taille : " + this.taille + ", titre : "+this.titre;
+    return "Axe taille : " + this.getTaille() + ", " + super.description();
   }
 
 }

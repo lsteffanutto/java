@@ -1,13 +1,23 @@
 class ElementRepere extends ElementAvecNom {
 
-  String titre;
+  Couleur c;
 
-  ElementRepere(){
-    this.titre = "Element du repère";
+
+  ElementRepere(String titre, Couleur c){
+    super(titre);
+    this.c = c;
+  }
+
+  Couleur getCouleur(){
+    return this.c;
+  }
+
+  void setCouleur(Couleur c){
+    this.c = c;
   }
 
   String description(){
-    return super.description();
+    return this.c.description() + ", " + super.description();
   }
 
 }
