@@ -16,7 +16,7 @@ class ElementAvecNom{
   }
 
   String description(){
-    return "titre: " + this.getTitre();
+    return "titre : " + this.getTitre();
   }
 
 }

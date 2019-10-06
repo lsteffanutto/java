@@ -4,24 +4,28 @@ class Point extends ElementRepere {
 
   Point(){
 
-    this.titre="Point";
-    this.c = Couleur.noir();
-    this.x=0;
-    this.y=0;
+    this("Point",Couleur.noir(),0,0);
+    // this.titre="Point";
+    // this.c = Couleur.noir();
+    // this.x=0;
+    // this.y=0;
   }
 
   Point(int x, int y){
-    this.titre="Point";
-    this.c = Couleur.noir();
-    if(x<0)
-      this.x=0;
-    else
-      this.x=x;
 
-    if(y<0)
-      this.y=0;
-    else
-      this.y=y;
+    this("Point",Couleur.noir(),x,y);
+
+    // this.titre="Point";
+    // this.c = Couleur.noir();
+    // if(x<0)
+    //   this.x=0;
+    // else
+    //   this.x=x;
+    //
+    // if(y<0)
+    //   this.y=0;
+    // else
+    //   this.y=y;
   }
 
   Point(String titre, Couleur c, int x, int y){
@@ -52,7 +56,7 @@ class Point extends ElementRepere {
   }
 
   String description(){
-    return "Point (" + this.x + "," + this.y + ")" + super.description();
+    return "Point (" + this.x + "," + this.y + "), " + super.description();
   }
 
 }

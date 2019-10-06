@@ -14,14 +14,12 @@ class Axe extends ElementAvecNom {
 
   }
 
-  // Axe(int taille){
-  //   this.titre = "AXE";
-  //   this.taille= taille;
-  // }
+  Axe(int taille){
+    this("AXE",0);
+  }
 
   Axe(){
-    this.titre = "AXE";
-    this.taille=0;
+    this("AXE",0);
   }
 
   int getTaille(){

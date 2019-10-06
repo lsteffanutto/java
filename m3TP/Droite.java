@@ -4,10 +4,21 @@ class Droite extends ElementRepere {
   Point d;
 
   Droite(){
-    this.titre = "Droite";
-    this.c = Couleur.noir();
-    this.o= new Point();
-    this.d= new Point();
+
+    this("Droite", Couleur.noir(), new Point(), new Point() );
+    // this.titre = "Droite";
+    // this.c = Couleur.noir();
+    // this.o= new Point();
+    // this.d= new Point();
+  }
+
+  Droite(Point origine, Point destination){
+
+    this("Droite", Couleur.noir(), origine, destination );
+    // this.titre = "Droite";
+    // this.c = Couleur.noir();
+    // this.o= new Point();
+    // this.d= new Point();
   }
 
   Droite(String titre, Couleur c, Point start, Point end){
@@ -20,7 +31,7 @@ class Droite extends ElementRepere {
 
 
   String description(){
-    return super.description() + "Droite ("+ this.o.getX() + "," + this.o.getY() + ") -> (" + this.d.getX() + "," + this.d.getX() + ")";
+    return "Droite ("+ this.o.getX() + "," + this.o.getY() + ") -> (" + this.d.getX() + "," + this.d.getY() + "), " + super.description();
 
   }
 
