@@ -1,5 +1,4 @@
 package repere.formes;
-
 import repere.*;
 
 

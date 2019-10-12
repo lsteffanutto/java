@@ -65,22 +65,22 @@ public class Couleur{
 
 
 // fonction static pas d'objet donc pas de this
-  static Couleur noir(){
+  public static Couleur noir(){
     return new Couleur(0,0,0);
   }
-  static Couleur blanc(){
+  public static Couleur blanc(){
     return new Couleur(255,255,255);
   }
-  static Couleur rouge(){
+  public static Couleur rouge(){
     return new Couleur(255,0,0);
   }
-  static Couleur vert(){
+  public static Couleur vert(){
     return new Couleur(0,255,0);
   }
-  static Couleur bleu(){
+  public static Couleur bleu(){
     return new Couleur(0,0,255);
   }
-  static Couleur auHasard(){
+  public static Couleur auHasard(){
     return new Couleur((int)(Math.random() * (255)),(int)(Math.random() * (255)),(int)(Math.random() * (255)));
   }
 

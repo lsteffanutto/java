@@ -1,7 +1,5 @@
-package test;
+package repere;
 
-import repere.formes.*;
-import repere.*;
 
 import java.util.ArrayList;
 
